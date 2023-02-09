@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>My store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./RedStore_Img/images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Details.html">Details</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="./RedStore_Img/images/cart.png" width="30px" height="30px">
+                <img src="./RedStore_Img/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div> 
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2" >
+                <img src="./RedStore_Img/images/gallery-1.jpg" width="100%" id="ProductImg" >
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="./RedStore_Img/images/gallery-1.jpg" width="100%" id="small-img1" >
+                       </div>
+                        <div class="small-img-col">
+                             <img src="./RedStore_Img/images/gallery-2.jpg" width="100%" id="small-img2">
+                        </div>
+                        <div class="small-img-col">
+                             <img src="./RedStore_Img/images/gallery-3.jpg" width="100%" id="small-img3">
+                        </div>    
+                        <div class="small-img-col">
+                             <img src="./RedStore_Img/images/gallery-4.jpg" width="100%" id="small-img4">
+                        </div> 
+                    </div>
+                </div>
+            
+ 
+     
+              <div class="col-2">
+                  <p>T-shirts</p>
+                  <h1>RED PRINTED T-SHIRTS</h1> 
+                  <h4>Red Printed T-shirts</h4> 
+                  <select>
+                       <option>Select size</option>
+                       <option>xl</option>
+                       <option>xxl</option>
+                       <option>large</option>
+                      <option>Small</option>
+                  </select>
+                  <input type="number" value="1">
+                  <a href="" class="btn">Add to Cart</a>
+                  <h3>Product Details</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                     Donec vitae lorem nec est aliquet dignissim.
+                    Aliquam sit amet urna eget mi molestie vehicula. </p>
+                  
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./RedStore_Img/images/play-store.png">
+                        <img src="./RedStore_Img/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./RedStore_Img/images/logo-white.png">
+                    <p>Nunc diam ante, dapibus eu condimentum eget, mollis ac felis. In blandit enim et massa ullamcorper,
+                    vel iaculis tellus tempor. Vivamus euismod</p>        
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupens</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affairs</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div> 
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        document.getElementById("small-img1").addEventListener("click",show1);
+        document.getElementById("small-img2").addEventListener("click",show2);
+        document.getElementById("small-img3").addEventListener("click",show3);
+        document.getElementById("small-img4").addEventListener("click",show4);
+        function show1(){
+            ProductImg.src="./RedStore_Img/images/gallery-1.jpg";
+
+        } 
+        function show2(){
+            ProductImg.src="./RedStore_Img/images/gallery-2.jpg";
+
+        } 
+        function show3(){
+            ProductImg.src="./RedStore_Img/images/gallery-3.jpg";
+
+        } 
+        function show4(){
+            ProductImg.src="./RedStore_Img/images/gallery-4.jpg";
+
+        } 
+    </script>
+
+    
