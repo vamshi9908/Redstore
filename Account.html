@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>My store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./RedStore_Img/images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="./RedStore_Img/images/cart.png" width="30px" height="30px">
+                <img src="./RedStore_Img/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="account-page">
+        <div class="container">
+                 <div class="row">
+                <div class="col-2">
+                    <img src="./RedStore_Img/images/image1.png" alt="">
+                </div>    
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                          <span onclick="Login()">Register</span>
+                          <span onclick="Register()">Login</span>
+                          <hr id="Indicator">
+                        </div>
+                        <form id="Regform">
+                            <input type="text" placeholder="Username">
+                            <input type="Email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn" >Register</button> 
+                            <hr id="Indicator">   
+                        </form>
+                        <form id="logform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn" >Login</button>
+                            <a href="">Forget Password</a>
+                        </form>
+                       
+                    </div>    
+                </div>
+                </div>
+        </div> 
+    </div>       
+           
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./RedStore_Img/images/play-store.png">
+                        <img src="./RedStore_Img/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./RedStore_Img/images/logo-white.png">
+                    <p>Nunc diam ante, dapibus eu condimentum eget, mollis ac felis. In blandit enim et massa ullamcorper,
+                    vel iaculis tellus tempor. Vivamus euismod</p>        
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupens</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affairs</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div> 
+    <script>
+        var logform = document.getElementById("logform");
+        var Regform =document.getElementById("Regform");
+        var Indicator=document.getElementById("Indicator");
+        function Login(){
+                logform.style.transform = "translateX(0px)";
+                Regform.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+         function Register(){
+                logform.style.transform = "translateX(270px)";
+                Regform.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }    
+
+         
+            
+           
+    </script> 
+            
+</body>
+</html>        
+       
