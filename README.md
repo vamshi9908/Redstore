@@ -1,7 +1,5 @@
 # RED STORE
 
-Live Link : https://vamshi9908.github.io/
-
 ## Description
 
 This project is a RedStore where we can buy and see for shopping and this project just made by using technologies like HTML AND CSS Mostly.
